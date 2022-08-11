@@ -4,10 +4,10 @@ import Movies from "../src/components/Movies";
 
 const Index = ({ movies }) => {
 	return (
-		<>
+		<div>
 			<Hero />
 			<Movies movies={movies} />
-		</>
+		</div>
 	);
 };
 

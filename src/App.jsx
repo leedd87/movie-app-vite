@@ -6,19 +6,11 @@ import Index from "../pages/Index";
 import Details from "./components/Details";
 
 function App() {
-	const [movies, setMovies] = useState();
-
-	useEffect(() => {
-		axios
-			.get("https://ghibliapi.herokuapp.com/films/")
-			.then((res) => setMovies(res.data));
-	}, []);
-
 	return (
 		<div className="App">
 			<Routes>
-				<Route path="/" element={<Index movies={movies} />} />
-				<Route path="/movie/:id" element={<Details movies={movies} />} />
+				<Route path="/" element={<Index />} />
+				<Route path="/movie/:id" element={<Details />} />
 			</Routes>
 		</div>
 	);
