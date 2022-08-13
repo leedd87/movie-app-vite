@@ -44,7 +44,7 @@ const Details = ({ movies }) => {
 				className="w-full h-[500px]"
 			></div>
 			{/* <img src={movie?.movie_banner} alt="" /> */}
-			<div className="flex justify-center items-center border-red-400 mx-auto my-16 container bg-white rounded-2xl border-8 ">
+			<div className="flex justify-center items-center border-white mx-auto my-16 container bg-white rounded-2xl border-8 ">
 				<div className=" m-3 ">
 					<img
 						src={movie?.image}
