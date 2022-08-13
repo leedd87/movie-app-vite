@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link as LinkRouter } from "react-router-dom";
-import Input from "./Input";
 import "../styles/input.css";
 import Card from "./Card";
 import axios from "axios";
@@ -21,8 +19,10 @@ const Movies = () => {
 		e.title.toLowerCase().trim().startsWith(input)
 	);
 
+	console.log(movies);
+
 	return (
-		<div className="flex justify-center items-center flex-col">
+		<div className="h-min-[60vh] flex justify-center items-center flex-col">
 			<div className="form my-5">
 				<input
 					className="input"
@@ -35,16 +35,12 @@ const Movies = () => {
 				/>
 				<span className="input-border"></span>
 			</div>
-			<div className="grid grid-cols-4 gap-7 container mb-10">
+			<div className="flex justify-around mx-auto flex-wrap items-center gap-7 container mb-10">
 				{arrayFilter
 					? arrayFilter?.map((movie) => (
-							// <div key={movie.id} className="col-span-1 flex flex-col">
-							// 	<img src={movie.image} alt="" />
-							// 	<LinkRouter to={`/movie/${movie.id}`}>
-							// 		<h2 className="text-black">{movie.title}</h2>
-							// 	</LinkRouter>
-							// </div>
-							<Card movie={movie} />
+							<div className="card" key={movie.id}>
+								<Card movie={movie} />
+							</div>
 					  ))
 					: null}
 			</div>

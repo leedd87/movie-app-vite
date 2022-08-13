@@ -5,3 +5,20 @@
 	/* padding: 2rem; */
 	text-align: center;
 }
+
+.footer {
+	background-color: red;
+}
+
+.fondo {
+	/* background-image: url("https://i.pinimg.com/originals/63/5f/75/635f75d03f5c5e2102952d7fe666644a.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; */
+	background-color: #e7f6f2;
+	height: 100vh;
+}
+
+/* .img-detail {
+	height: 400px;
+} */

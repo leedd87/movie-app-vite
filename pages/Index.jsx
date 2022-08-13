@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../src/components/Footer";
 import Hero from "../src/components/Hero";
 import Movies from "../src/components/Movies";
 
@@ -7,6 +8,7 @@ const Index = ({ movies }) => {
 		<div>
 			<Hero />
 			<Movies movies={movies} />
+			<Footer />
 		</div>
 	);
 };
